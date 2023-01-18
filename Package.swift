@@ -4,7 +4,8 @@ import PackageDescription
 let package = Package(
     name: "jwt",
     platforms: [
-       .macOS(.v10_15)
+      .iOS(.v13),
+      .macOS(.v10_15),
     ],
     products: [
         .library(name: "JWT", targets: ["JWT"]),
